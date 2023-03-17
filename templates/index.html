@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   {% comment %} {% bootstrap_css %}
-  <link rel="apple-touch-icon" sizes="57x57" href="{% static 'ico/apple-icon-57x57.png' %}">
+  <!-- <link rel="apple-touch-icon" sizes="57x57" href="{% static 'ico/apple-icon-57x57.png' %}">
   <link rel="apple-touch-icon" sizes="60x60" href="{% static 'ico/apple-icon-60x60.png' %}">
   <link rel="apple-touch-icon" sizes="72x72" href="{% static 'ico/apple-icon-72x72.png' %}">
   <link rel="apple-touch-icon" sizes="76x76" href="{% static 'ico/apple-icon-76x76.png' %}">
@@ -24,10 +24,10 @@
   <link rel="manifest" href="{% static'ico/manifest.json'%}"> {% endcomment %}
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="{% static 'ico/ms-icon-144x144.png' %}">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#ffffff"> -->
   <title>{% block title %}Mini Carros{% endblock title %}</title>
   {% bootstrap_css %}
-  <link rel="stylesheet" href="{% static 'css/estilo.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
 </head>
 
@@ -37,7 +37,7 @@
     <!-- Fixed navbar -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'img/mini.png' %}" width="30"></a>
+        <a class="navbar-brand" href="{% url 'index' %}"><img src=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
           aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -74,12 +74,12 @@
       <div class="p-4 p-md-5 mb-4 rounded bg-dark text-white">
         <div class="row">
           <div class="col-md-6 align-middle">
-            <h1 class="display-4 fst-italic"> Carros </h1>
+            <h1 class="display-4 fst-italic"> Vitor Carros</h1>
             <p class="lead my-3"></p>
-            <p class="lead mb-0"><a href="{% url 'realizar_aluguel' %}" class="text-white fw-bold">Alugue um carro!</a></p>
+            <p class="lead mb-0"><a href="{% url 'realizar_aluguel' %}" class="text-white fw-bold">Alugue seu carro!</a></p>
           </div>
           <div class="col-md-6">
-            <img src="{% static 'img/mini.png' %}" class="mx-auto d-block" width="300" >
+            
           </div>
         </div>
       </div>
@@ -96,7 +96,7 @@
               <a href="{% url 'realizar_aluguel_carro' carro.pk %}" class="btn btn-primary mt-4">Alugue!</a>
             </div>
             <div class="col-auto d-none d-lg-block">
-              <img class="bd-placeholder-img" width="200" height="135" src="{% static 'img/civic.jpg' %}"role="img">
+              
               </div>
           </div>
         </div>
